@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <title>摸鱼小游戏 | Chuck Chicken 魔法蛋</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="游戏，Chuck Chicken 魔法蛋" />
+	<meta name="description" content="游戏 | Chuck Chicken 魔法蛋；立志打造一个拥有100个小游戏的摸鱼网站。made by   Haiyong，技术支持——海拥" /> 
+	<meta name="author" content="海拥(https://haiyong.site/moyu)" />
+	<meta name="copyright" content="海拥(https://haiyong.site/moyu)" />
+    <!--Temporary fix for IOS 9-->
+    <meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script type="text/javascript" src="game.js"></script>
+    <link rel="icon" href="https://haiyong.site/img/favicon.png" sizes="192x192" />
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a9430a37066911650e26adadcc42798a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</head>
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
+    <div id="ajaxbar">
+        <div id="game"><canvas id="canvas"></canvas></div>
+        <div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
+        <div id="play" class="play" onclick=""><img src="media/graphics/splash/mobile/cover-start.jpg" /></div>
+    </div>
+	<footer class="page-footer">
+	  <span>游戏👉</span>
+	  <a href="https://haiyong.site/moyu" target="_blank">
+		<img class="touxiang"  src="https://haiyong.site/img/favicon.png">
+	  </a>
+	</footer>
+	<footer class="page-left">  
+	  <a href="https://code.haiyong.site/" target="_blank">
+		<img class="touxiang"  src="https://code.haiyong.site/wp-content/uploads/2022/10/logo.jpg">
+	  </a>
+	  <span>👈源码</span>
+	</footer>
+	<script>
+		//禁用操作
+		
+		window.onload = function(){
+		    document.onkeydown = function (){
+		        var e = window.event || arguments[0];
+		        //F12
+		        if(e.keyCode == 123){
+		            return false;
+		        //Ctrl+Shift+I
+		        }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+		            return false;
+		        //Ctrl+Shift+C
+		        }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 67)){
+		            return false;
+		        //Shift+F10
+		        }else if((e.shiftKey) && (e.keyCode == 121)){
+		            return false;
+		        //Ctrl+U
+		        }else if((e.ctrlKey) && (e.keyCode == 85)){
+		            return false;
+		        //Ctrl+S
+		        }else if((e.ctrlKey) && (e.keyCode == 83)){
+		        return false;
+		    }
+		};
+		    document.oncontextmenu = function (){
+		        return false;
+		    }
+		}
+		
+		//禁止复制
+		document.onselectstart=new Function('event.returnValue=false;');
+		
+		//禁止选择文字
+		document.body.onselectstart = function() {
+		    self.event.returnValue=false
+		  };
+	</script>
+</body>
+</html>

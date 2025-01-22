@@ -5,7 +5,7 @@
 
 ![00](pics/00.jpg)
 
-![01](E:\项目\magicegg\MagicEgg_JS_funnygame\pics\01.jpg)
+![01](pics/01.jpg)
 
 ![02](pics/02.jpg)
 
